@@ -105,8 +105,8 @@ app.post("/orders", async(req, res) => {
             let transporter = nodemailer.createTransport({
                 service: "gmail",
                 auth: {
-                    user: "shakhzodnematullaev@gmail.com",
-                    pass: "19992811"
+                    user: process.env.EMAIL,
+                    pass: process.env.PASSWORD
                 }
             })
             
@@ -144,8 +144,8 @@ app.post("/bank", async (req, res) => {
             let transporter = nodemailer.createTransport({
                 service: "gmail",
                 auth: {
-                    user: "shakhzodnematullaev@gmail.com",
-                    pass: "19992811"
+                    user: process.env.EMAIL,
+                    pass: process.env.PASSWORD
                 }
             })
             
