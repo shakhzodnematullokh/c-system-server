@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 4000
 
 const app = express()
 const pool = new Pool({
-    connectionString: 'postgres://klwlzlvf:CYKyx9qMqJ-J-E0M7q2bHkcGRo8u1k1j@tyke.db.elephantsql.com/klwlzlvf '
+    connectionString: 'postgres://ywjsqrxz:w1vKN1G_AuMFx0AIipcjQvZatIla7wYf@castor.db.elephantsql.com/ywjsqrxz'
     // user: "postgres",
     // host: "localhost",
     // port: 5432,
