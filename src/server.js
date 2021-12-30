@@ -8,11 +8,12 @@ const PORT = process.env.PORT || 4000
 
 const app = express()
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    port: 5432,
-    password: "khamia11",
-    database: "c_system",
+    connectionString: 'postgres://klwlzlvf:CYKyx9qMqJ-J-E0M7q2bHkcGRo8u1k1j@tyke.db.elephantsql.com/klwlzlvf '
+    // user: "postgres",
+    // host: "localhost",
+    // port: 5432,
+    // password: "khamia11",
+    // database: "c_system",
 })
 
 const pg = async(SQL, ...params) => {
